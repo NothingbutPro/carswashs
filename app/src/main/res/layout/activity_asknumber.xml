@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tukuri.ics.SplashActivity"
+    android:gravity="center_vertical"
+    android:theme="@android:style/Theme.Light.WallpaperSettings"
+    android:orientation="vertical">
+    <!--android:background="@drawable/nnn"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_button1"
+            android:text="Skip for Now"
+            android:textSize="8pt"
+            android:layout_gravity="end"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--android:background="#9988A86C"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:id="@+id/lay1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:src="@drawable/app_icon"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_applogo"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_search_edt"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/lay1"
+            >
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Number"
+                android:textColorHint="@color/dark_gray"
+                android:textColor="@color/colorPrimary"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/xml_button1"
+                >
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+          >
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xml_button1"
+                android:text="Login"
+                android:textSize="8pt"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- <TextView
+         android:id="@+id/app_name"
+         android:layout_width="348dp"
+         android:layout_height="wrap_content"
+         android:text="@string/app_name"
+         android:textColor="@color/colorPrimaryDark"
+         android:layout_marginTop="@dimen/space_5"
+         android:textSize="@dimen/space_20"
+         android:textAlignment="center"
+         android:shadowDy="1"
+         android:shadowDx="1"
+         tools:layout_editor_absoluteY="326dp"
+         tools:layout_editor_absoluteX="10dp" />-->
+</RelativeLayout>

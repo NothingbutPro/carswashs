@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>Select Area</item>
+        <item>Vijay Nagar</item>
+        <item>Bengali Square</item>
+        <item>Bhawarkua</item>
+        <item>Palasia</item>
+
+    </string-array>
+    <string name="area">Select Area</string>
+
+    <string-array name="catnum">
+        <item>Enter Number</item>
+        <item>111111</item>
+        <item>22222</item>
+        <item>33333</item>
+        <item>8888888</item>
+
+    </string-array>
+
+    <string-array name="service_type">
+        <item>Daily Service </item>
+        <item>Monthly Service</item>
+
+    </string-array>
+</resources>
